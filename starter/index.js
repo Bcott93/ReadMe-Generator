@@ -32,11 +32,7 @@ inquirer
             message: 'Section - Usage:',
             name: 'usage',
         },
-        {
-            type: 'input',
-            message: 'Section - License:',
-            name: 'license',
-        },
+       
         {
             type: 'input',
             message: 'Section - Contributions:',
@@ -49,9 +45,19 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Section - Questions:',
-            name: 'questions',
+            message: 'Please enter your github username:',
+            name: 'github',
         },
+        {
+            type: 'input',
+            message: 'Please enter your email address:',
+            name: 'email',
+        },
+        // {
+        //     type: 'input',
+        //     message: 'Section - License:',
+        //     name: 'license',
+        // },
 
 
 ])
@@ -81,7 +87,7 @@ inquirer
      ${response.usage}
 
 ## License <a id="license"></a>
-     ${response.license}
+ When a user chooses a license for their application from a list of options then a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
 
 ## Contributions <a id="contributions"></a>
      ${response.contributions}
@@ -89,7 +95,15 @@ inquirer
 ## Tests <a id="tests"></a>
      ${response.tests}
 ## Questions <a id="questions"></a>
-     ${response.questions}`, 
+If you have any further questions, you can find my GitHub profile and email address below. Please reach out and I will do my best to assist.
+GitHub Profile: 
+[www.github.com/${response.github}](https://www.github.com/${response.github})
+Email Address:${response.email}
+
+
+      
+     
+     `, 
     (err) => err ? console.error(err) : console.log('Success'))
     
     
