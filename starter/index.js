@@ -67,12 +67,12 @@ inquirer
 
 ## Table of contents
 
-    1. [Installation](#installation)
-    2. [Usage](#usage)
-    3. [License](#license)
-    4. [Contributions](#contributions)
-    5. [Tests](#tests)
-    6. [Questions](#questions)
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [License](#license)
+4. [Contributions](#contributions)
+5. [Tests](#tests)
+6. [Questions](#questions)
 
 ## Installation <a id="installation"></a>
      ${response.installation}
