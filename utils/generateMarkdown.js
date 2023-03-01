@@ -1,13 +1,12 @@
 // function to generate markdown for README
-
+// Input fields ready for userInput and added hyperlinks to the contents table
 function generateMarkdown(response) {
   return`
 # ${response.title}
 
 ## Description
   
-   ${response.description}
-  
+${response.description}
   
 ## Table of contents
   
@@ -19,35 +18,34 @@ function generateMarkdown(response) {
 6. [Questions](#questions)
   
 ## Installation <a id="installation"></a>
-   ${response.installation}
+  
+${response.installation}
   
 ## Usage <a id="usage"></a>
-   ${response.usage}
+
+${response.usage}
   
 ## License <a id="license"></a>
+
 When a user chooses a license for their application from a list of options, then a badge for that license is added. ${"\n"}
-   License: ${response.license} ${"\n"} 
+License: ${response.license} ${"\n"} 
    
 
 ## Contributions <a id="contributions"></a>
-   ${response.contributions}
+${response.contributions}
   
 ## Tests <a id="tests"></a>
-   ${response.tests}
+${response.tests}
 ## Questions <a id="questions"></a>
 If you have any further questions, you can find my GitHub profile and email address below. Please reach out and I will do my best to assist.
 ${"\n"} GitHub Profile: 
 [www.github.com/${response.github}](https://www.github.com/${response.github}) ${"\n"}
 Email Address: ${response.email}
   
-  
-        
-       
-       
 
 `
 }
-
+// Exports the data, ready to be accessed by index.js
 export default generateMarkdown
 
 
